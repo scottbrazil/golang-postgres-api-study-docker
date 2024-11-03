@@ -6,7 +6,6 @@ services:
     image: scottbrazil/go-app:1.0
     environment:
       DATABASE_URL: "host=db port=5432 user=postgres password=postgres dbname=db-k sslmode=disable"
-      #psqlInfo := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
     ports:
       - "7777:7777"
     networks:
